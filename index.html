@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="mycalc.css">
+    <script src="mycalc.js" type = "text/javascript"></script>
+    
+</head>
+
+<body>
+    <!-- <div class  ="calculator"> -->
+    <div class = "box">
+        <h2 class = "text-center">Calculator App</h2>
+    
+    <div class="formstyle">
+        <form name="form1" id="form">
+            
+            <input id="calc" type="text" class ='screen' name="answer" readonly /><br><br>
+                <div class = "buttons1">
+            <input type="button" id="clear" value="C" onclick="form1.answer.value=''" style="width:80px">
+            <input type = "button" value="&divide;" class="division" onclick="form1.answer.value+='/'"style="width:80px">
+            <input type="button" value="+" class = 'plus' onclick="form1.answer.value+='+'"style="width:80px"><br><br>        
+            <input type="button" value="-" class = 'minus' onclick="form1.answer.value+='-'"style="width:80px"><br><br>
+            <!-- <input type="button" value="(" onclick="form1.answer.value+='('">
+            <input type="button" value=")" onclick="form1.answer.value+=')'"> -->
+            <!-- <input type="button" value=")" onclick="form1.answer.value+=')'"> -->
+            <!-- <input type="button" value="%" class = 'modulo' onclick="form1.answer.value+='%'"><br><br> -->
+                </div>
+                <div class = "buttons2">
+                    <input type="button" value="1" onclick="form1.answer.value+='1'"style="width:80px">
+                    <input type="button" value="2" onclick="form1.answer.value+='2'"style="width:80px">
+                    <input type="button" value="3" onclick="form1.answer.value+='3'"style="width:80px">
+                    <input type="button" value="X" class = 'multiplication' onclick="form1.answer.value+='*'"style="width:80px"><br><br>
+                </div>
+                <div class = "buttons3">
+                    <input type="button" value="4" onclick="form1.answer.value+='4'"style="width:80px">
+                    <input type="button" value="5" onclick="form1.answer.value+='5'"style="width:80px">
+                    <input type="button" value="6" onclick="form1.answer.value+='6'"style="width:80px">
+                    <input type="button" value="7" onclick="form1.answer.value+='7'"style="width:80px">
+                    <!-- <input type="button" value="√ " onclick="if (checkNum(this.form1.display.value)) { sqrt(this.form1) }"> -->
+                    
+                </div>
+                <div class = "buttons4">
+                    <!-- <input type = "button"  value = "+/-"onclick="positive(form1.answer.value)"> -->
+                    <input type="button" value="8" onclick="form1.answer.value+='8'"style="width:80px">
+                    <input type="button" value="9" onclick="form1.answer.value+='9'"style="width:80px">
+                    <input type="button" value="0" onclick="form1.answer.value+='0'"style="width:80px">
+                    <input type="button" value="." class = 'dot' onclick="form1.answer.value+='.'"style="width:80px">
+                    <!-- <input type="button" value="%" onclick="form1.answer.value+='            '" -->
+                </div>
+                <div class = "buttons5">
+                    <input type="button" value="=" class = 'equalto' onclick="form1.answer.value=eval(form1.answer.value)" style="text-align: center"><br><br>
+                    <!-- <input type="button" value="÷" class = 'division' onclick="form1.answer.value+='/'" style="width: 50px"> -->
+                </div> 
+
+            
+            
+        </form>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
